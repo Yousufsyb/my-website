@@ -6,39 +6,17 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
-    position: relative;
+    padding: 40px 0; /* Add padding to create space above and below the image */
+    background-color: #f0f0f0; /* Optional: add background color */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #fff;
-    position: absolute;
-    top: -75px; /* Adjust this value depending on the height of your header */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 80px; /* Adjust to push the nav down below the image */
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    border: 5px solid #333;
 }
 
 main {
