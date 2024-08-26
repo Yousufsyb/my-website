@@ -54,15 +54,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
+    /* Can add styling here if needed */
 }
 
 footer {
