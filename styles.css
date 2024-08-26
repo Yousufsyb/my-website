@@ -47,8 +47,7 @@ nav ul li a {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: transparent; /* Remove background color */
-    border: none; /* Remove border */
+    background-color: #555; /* Darker background for navigation links */
 }
 
 nav ul li a:hover {
@@ -66,6 +65,14 @@ main {
     color: #333; /* Dark color for the text */
     text-align: center; /* Center-align the text */
     margin-top: 20px; /* Space above the text */
+}
+
+.page-description {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0 30px; /* Space between the description and the rest of the content */
+    text-align: center; /* Center-align the text */
+    line-height: 1.6; /* Improve readability with line height */
 }
 
 footer {
