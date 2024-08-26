@@ -44,6 +44,11 @@ section {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
 footer {
     background-color: #333;
     color: #fff;
