@@ -24,9 +24,11 @@ header {
     padding: 20px;
 }
 
-.intro h1 {
-    font-size: 24px;
-    margin: 0;
+.main-title {
+    font-size: 48px; /* Larger font size for the title */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* White color for the title */
+    margin: 20px 0; /* Space above and below the title */
 }
 
 nav ul {
