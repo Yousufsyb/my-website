@@ -56,7 +56,15 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    /* Can add styling here if needed */
+    background-color: #fff; /* White background for the main content area */
+}
+
+.page-title {
+    font-size: 36px; /* Font size for the "Home" text */
+    font-weight: bold; /* Bold text for prominence */
+    color: #333; /* Dark color for the text */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Space above the text */
 }
 
 footer {
