@@ -1,78 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fff;
-    margin: 20px 0; /* Space between the image and the intro section */
-}
-
-.intro {
-    padding: 20px;
-}
-
-.main-title {
-    font-size: 48px; /* Larger font size for the title */
-    font-weight: bold; /* Make the text bold */
-    color: #fff; /* White color for the title */
-    margin: 20px 0; /* Space above and below the title */
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0; /* Space above the navigation links */
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #555; /* Darker background for navigation links */
-}
-
-nav ul li a:hover {
-    background-color: #777; /* Lighter background on hover */
-}
-
-main {
-    padding: 20px;
-    background-color: #fff; /* White background for the main content area */
-}
-
-.page-title {
-    font-size: 36px; /* Font size for the "Home" text */
-    font-weight: bold; /* Bold text for prominence */
-    color: #333; /* Dark color for the text */
-    text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Space above the text */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="My Profile Picture" class="profile-pic">
+        <section class="intro">
+            <h1 class="main-title">Welcome to My Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#fun-tools">Fun Tools</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!-- The main content area is now empty -->
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
