@@ -20,6 +20,7 @@ header {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    border: 5px solid #fff; /* Border around the profile picture */
 }
 
 /* Main title below the profile picture */
@@ -47,10 +48,12 @@ nav ul li a {
     color: white;
     padding: 10px 15px; /* Adjust padding for spacing */
     display: inline-block;
+    border: none; /* Remove borders from the navigation links */
+    background-color: transparent; /* Ensure no background color creates a box effect */
 }
 
 nav ul li a:hover {
-    background-color: transparent;
+    background-color: #444; /* Optional: subtle background on hover */
     color: #ddd;
     border: none;
 }
@@ -77,3 +80,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
