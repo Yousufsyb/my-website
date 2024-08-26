@@ -16,7 +16,7 @@ header {
 
 .profile-pic {
     width: 150px;
-    height: auto; /* Maintain aspect ratio */
+    height: 17px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
