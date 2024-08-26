@@ -1,82 +1,78 @@
-/* General reset and styling */
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header and Profile Picture */
 header {
     background-color: #333;
-    padding: 20px 0;
+    color: #fff;
     text-align: center;
-    color: white;
 }
 
 .profile-pic {
     width: 150px;
-    height: auto; /* Maintain aspect ratio */
+    height: 150px;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid #fff; /* Border around the profile picture */
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin: 20px 0; /* Space between the image and the intro section */
 }
 
-/* Main title below the profile picture */
-.main-title {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    background-color: #333; /* Extending the black background */
-}
-
-nav ul li {
-    margin: 0 10px; /* Adjust margin between items */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px; /* Adjust padding for spacing */
-    display: inline-block;
-    border: none; /* Remove borders from the navigation links */
-    background-color: transparent; /* Ensure no background color creates a box effect */
-}
-
-nav ul li a:hover {
-    background-color: #444; /* Optional: subtle background on hover */
-    color: #ddd;
-    border: none;
-}
-
-/* Main Content Area */
-main {
-    text-align: center;
+.intro {
     padding: 20px;
 }
 
-.page-title {
-    font-size: 28px;
-    color: #333;
-    margin-top: 20px;
+.main-title {
+    font-size: 48px; /* Larger font size for the title */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* White color for the title */
+    margin: 20px 0; /* Space above and below the title */
 }
 
-/* Footer Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0; /* Space above the navigation links */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #555; /* Darker background for navigation links */
+}
+
+nav ul li a:hover {
+    background-color: #777; /* Lighter background on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #fff; /* White background for the main content area */
+}
+
+.page-title {
+    font-size: 36px; /* Font size for the "Home" text */
+    font-weight: bold; /* Bold text for prominence */
+    color: #333; /* Dark color for the text */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Space above the text */
+}
+
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: white;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
