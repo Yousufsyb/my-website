@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Functions</title>
+    <title>Functions</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -16,7 +16,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
         }
         .profile-pic {
             width: 150px;
@@ -24,68 +24,44 @@
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #fff;
-            margin: 20px auto; /* Center the image and space it from other elements */
-        }
-        .main-title {
-            font-size: 36px;
-            margin: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 10px 0;
-            background-color: #444;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #555;
-        }
-        nav ul li a:hover {
-            background-color: #777;
+            margin: 20px 0; /* Space between the image and the intro section */
         }
         main {
             padding: 20px;
-            background-color: #f9f9f9;
-            max-width: 900px;
-            margin: 0 auto;
+            background-color: #fff; /* White background for the main content area */
         }
-        .page-title {
-            font-size: 28px;
-            font-weight: bold;
+        .main-title {
+            font-size: 48px; /* Larger font size for the title */
+            font-weight: bold; /* Make the text bold */
+            color: #333; /* Dark color for the title */
+            text-align: center; /* Center-align the text */
+            margin-bottom: 20px; /* Space below the title */
+        }
+        .section {
+            margin-bottom: 40px; /* Space between sections */
+        }
+        .section h2 {
+            font-size: 36px;
             color: #333;
-            text-align: center;
-            margin-top: 20px;
             margin-bottom: 10px;
         }
-        .page-description {
+        .section p {
             font-size: 18px;
-            color: #555;
-            text-align: center;
+            line-height: 1.6;
+        }
+        .definition {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
-        .function-section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .function-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .function-description {
-            font-size: 16px;
-            line-height: 1.6;
+        .definition h3 {
+            font-size: 24px;
+            margin-top: 0;
             color: #333;
+        }
+        .definition p {
+            font-size: 16px;
         }
         footer {
             background-color: #333;
@@ -101,53 +77,83 @@
 <body>
     <header>
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1 class="main-title">About Functions</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="fun-tools.html">Fun Tools</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="main-title">Functions</div>
     </header>
 
     <main>
-        <div class="page-title">Understanding Functions</div>
-        <p class="page-description">Explore the basics of functions, their definitions, and how they transform inputs into outputs.</p>
+        <section class="section">
+            <h2>What is a Function</h2>
+            <p>A function is a relation between a set of inputs that each have one output. A function consists of an input, an operation, and an output. For example, in <code>f(x) = x + 2</code>, the <code>f</code> stands for function, which can be changed in different functions, <code>x</code> is the input, and <code>x + 2</code> is the operation that gives us the output. Additionally, the notation <code>f(x)</code> represents "y is a function of x".</p>
+        </section>
 
-        <div class="function-section">
-            <h2 class="function-title">What is a Function?</h2>
-            <p class="function-description">
-                A function is a relationship between a set of inputs and their corresponding outputs. Each input has exactly one output. A function consists of three parts: an input, an operation, and an output. For example, in the function <code>f(x) = x + 2</code>, <code>f</code> denotes the function (this letter can be changed), <code>x</code> is the input, and <code>x + 2</code> is the operation that produces the output. The notation <code>f(x)</code> represents "f is a function of <code>x</code>".
-            </p>
-        </div>
+        <section class="section">
+            <h2>Function Descriptions</h2>
+            
+            <div class="definition">
+                <h3>1. Coefficient</h3>
+                <p><strong>Definition:</strong> A number that multiplies a variable. In the quadratic function <code>f(x) = ax^2 + bx + c</code>, <code>a</code> is the coefficient of <code>x^2</code>, <code>b</code> is the coefficient of <code>x</code>, and <code>c</code> is the constant term.</p>
+            </div>
 
-        <div class="function-section">
-            <h2 class="function-title">Function <code>f(x) = x + 1</code></h2>
-            <p class="function-description">
-                The function <code>f(x) = x + 1</code> takes an input <code>x</code> and adds 1 to it. The <code>f</code> in the function represents the rule, but you could use different letters for different functions. For every input <code>x</code>, the function always produces the same output, which is <code>x + 1</code>. This consistency means that if you know the input, you can easily find the output. Functions can be visualized on a graph to see how they transform inputs into outputs.
-            </p>
-        </div>
+            <div class="definition">
+                <h3>2. Vertex</h3>
+                <p><strong>Definition:</strong> The highest or lowest point on the graph of a quadratic function. This point is where the parabola turns and is the maximum point if the parabola opens downwards or the minimum point if it opens upwards.</p>
+            </div>
 
-        <div class="function-section">
-            <h2 class="function-title">Function <code>g(x) = 2x - 3</code></h2>
-            <p class="function-description">
-                The function <code>g(x) = 2x - 3</code> takes an input <code>x</code>, multiplies it by 2, and then subtracts 3. The <code>g</code> represents the rule, and you could use different letters for different functions. For every input <code>x</code>, the output is consistently calculated as <code>2x - 3</code>. This means if you know <code>x</code>, you can find the result by performing the operation. The function's behavior can also be plotted on a graph to show how it transforms inputs into outputs.
-            </p>
-        </div>
+            <div class="definition">
+                <h3>3. Axis of Symmetry</h3>
+                <p><strong>Definition:</strong> A vertical line that passes through the vertex of the parabola, dividing it into two mirror-image halves.</p>
+            </div>
 
-        <div class="function-section">
-            <h2 class="function-title">Function <code>h(x) = x^2 + 4</code></h2>
-            <p class="function-description">
-                The function <code>h(x) = x^2 + 4</code> takes an input <code>x</code>, squares it (multiplies <code>x</code> by itself), and then adds 4. The <code>h</code> in the function stands for the rule, which can be replaced with other letters for different functions. For every value of <code>x</code>, the function produces the output <code>x^2 + 4</code>. This means if you know <code>x</code>, you can calculate the output by squaring <code>x</code> and adding 4. The function can be graphed to visualize how it changes the inputs into outputs.
-            </p>
-        </div>
+            <div class="definition">
+                <h3>4. Roots (or Zeros)</h3>
+                <p><strong>Definition:</strong> The points where the graph of the quadratic function intersects the x-axis. These are the values of <code>x</code> that make <code>f(x) = 0</code>.</p>
+            </div>
+
+            <div class="definition">
+                <h3>5. Parabola</h3>
+                <p><strong>Definition:</strong> The U-shaped curve that represents the graph of a quadratic function. It can open upwards or downwards.</p>
+            </div>
+
+            <div class="definition">
+                <h3>6. Standard Form</h3>
+                <p><strong>Definition:</strong> The general form of a quadratic function written as <code>f(x) = ax^2 + bx + c</code>.</p>
+            </div>
+
+            <div class="definition">
+                <h3>7. Factoring Form</h3>
+                <p><strong>Definition:</strong> A way to express a quadratic function as a product of its factors, written as <code>f(x) = a(x − p)(x − q)</code>, where <code>p</code> and <code>q</code> are the roots.</p>
+            </div>
+
+            <div class="definition">
+                <h3>8. Discriminant</h3>
+                <p><strong>Definition:</strong> Part of the quadratic formula inside the square root, given by <code>b^2 − 4ac</code>. It determines the nature of the roots of the quadratic equation:
+                <ul>
+                    <li><strong>Positive:</strong> Two real roots.</li>
+                    <li><strong>Zero:</strong> One real root (repeated root).</li>
+                    <li><strong>Negative:</strong> No real roots (two complex roots).</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="definition">
+                <h3>9. Roots (p and q)</h3>
+                <p><strong>Definition:</strong> The values of <code>x</code> where the quadratic function equals zero. In the factoring form <code>f(x) = a(x − p)(x − q)</code>, <code>p</code> and <code>q</code> are these root values.</p>
+            </div>
+
+            <div class="definition">
+                <h3>10. Maximum Point</h3>
+                <p><strong>Definition:</strong> The highest point on the graph of a quadratic function. It occurs when the parabola opens downwards (i.e., <code>a < 0</code>). At this point, the function has its greatest value.</p>
+            </div>
+
+            <div class="definition">
+                <h3>11. Minimum Point</h3>
+                <p><strong>Definition:</strong> The lowest point on the graph of a quadratic function. It occurs when the parabola opens upwards (i.e., <code>a > 0</code>). At this point, the function has its smallest value.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        &copy; 2024 Your Name
+        <p>&copy; 2024 My Website</p>
     </footer>
 </body>
 </html>
