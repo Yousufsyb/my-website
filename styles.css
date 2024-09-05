@@ -9,6 +9,7 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
+    padding: 10px 0;
 }
 
 .profile-pic {
@@ -17,7 +18,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
-    margin: 20px 0; /* Space between the image and the intro section */
+    margin: 20px 0;
 }
 
 .intro {
@@ -25,53 +26,51 @@ header {
 }
 
 .main-title {
-    font-size: 48px; /* Larger font size for the title */
-    font-weight: bold; /* Make the text bold */
-    color: #fff; /* White color for the title */
-    margin: 20px 0; /* Space above and below the title */
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0 0; /* Space above the navigation links */
+    margin: 20px 0 0;
+    text-align: center; /* Center align navigation links */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* Allow links to be inline but respect width */
     margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
+    background-color: #555;
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 nav ul li a:hover {
-    background-color: #777; /* Lighter background on hover */
+    background-color: #777; /* Adjust background color on hover */
 }
 
 main {
     padding: 20px;
-    background-color: #fff; /* White background for the main content area */
+    background-color: #fff;
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
 }
 
 .page-title {
-    font-size: 36px; /* Font size for the "Home" text */
-    font-weight: bold; /* Bold text for prominence */
-    color: #333; /* Dark color for the text */
-    text-align: center; /* Center-align the text */
-    margin-top: 20px; /* Space above the text */
-}
-
-.page-description {
-    font-size: 18px;
-    color: #555;
-    margin: 10px 0 30px; /* Space between the description and the rest of the content */
-    text-align: center; /* Center-align the text */
-    line-height: 1.6; /* Improve readability with line height */
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
 }
 
 footer {
@@ -82,4 +81,74 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Functions Page Specific Styles */
+.functions-page {
+    padding: 20px;
+}
+
+.functions-page .section {
+    margin-bottom: 30px;
+}
+
+.functions-page h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.functions-page h2 {
+    font-size: 28px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.functions-page p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.functions-page .definition {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.functions-page .definition dt {
+    font-weight: bold;
+}
+
+.functions-page .definition dd {
+    margin: 5px 0 15px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically on small screens */
+        margin: 5px 0;
+    }
+
+    .functions-page h1 {
+        font-size: 28px;
+    }
+
+    .functions-page h2 {
+        font-size: 24px;
+    }
+
+    .functions-page p {
+        font-size: 14px;
+    }
+
+    .functions-page .definition {
+        font-size: 12px;
+    }
 }
