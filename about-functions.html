@@ -7,153 +7,155 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px 0;
+            border-radius: 8px 8px 0 0;
         }
         .profile-pic {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #fff;
-            margin: 20px 0; /* Space between the image and the intro section */
+            margin-bottom: 15px;
         }
-        main {
-            padding: 20px;
-            background-color: #fff; /* White background for the main content area */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
-        .main-title {
-            font-size: 48px; /* Larger font size for the title */
-            font-weight: bold; /* Make the text bold */
-            color: #333; /* Dark color for the title */
-            text-align: center; /* Center-align the text */
-            margin-bottom: 20px; /* Space below the title */
+        nav ul li {
+            margin: 0 10px;
         }
-        .section {
-            margin-bottom: 40px; /* Space between sections */
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .section h2 {
-            font-size: 36px;
-            color: #333;
-            margin-bottom: 10px;
+        nav ul li a:hover {
+            text-decoration: underline;
         }
-        .section p {
-            font-size: 18px;
-            line-height: 1.6;
+        h1, h2 {
+            margin: 0 0 20px;
+            font-weight: 400;
         }
-        .definition {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+        .description, .definition {
+            margin: 20px 0;
         }
-        .definition h3 {
-            font-size: 24px;
-            margin-top: 0;
-            color: #333;
-        }
-        .definition p {
-            font-size: 16px;
-        }
-        footer {
+        .description h2, .definition h2 {
             background-color: #333;
             color: #fff;
+            padding: 10px;
+            border-radius: 5px;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        .definition dl {
+            margin: 20px 0;
+        }
+        .definition dt {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .definition dd {
+            margin: 0 0 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="main-title">Functions</div>
+        <h1 class="main-title">Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="fun-tools.html">Fun Tools</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <section class="section">
+    <main class="container">
+        <section class="intro">
             <h2>What is a Function</h2>
-            <p>A function is a relation between a set of inputs that each have one output. A function consists of an input, an operation, and an output. For example, in <code>f(x) = x + 2</code>, the <code>f</code> stands for function, which can be changed in different functions, <code>x</code> is the input, and <code>x + 2</code> is the operation that gives us the output. Additionally, the notation <code>f(x)</code> represents "y is a function of x".</p>
+            <p>A function is a relation between a set of inputs that each have one output. A function consists of an input, an operation, and an output. For example, in <code>f(x) = x + 2</code>, the <code>f</code> stands for function and can be replaced in different functions, the <code>x</code> is the input, and <code>x + 2</code> is the operation that gives us the output. In addition, the notation <code>f(x)</code> means "y is a function of x".</p>
         </section>
-
-        <section class="section">
-            <h2>Function Descriptions</h2>
-            
-            <div class="definition">
-                <h3>1. Coefficient</h3>
-                <p><strong>Definition:</strong> A number that multiplies a variable. In the quadratic function <code>f(x) = ax^2 + bx + c</code>, <code>a</code> is the coefficient of <code>x^2</code>, <code>b</code> is the coefficient of <code>x</code>, and <code>c</code> is the constant term.</p>
+        <section class="description">
+            <h2>Function Examples</h2>
+            <div class="example">
+                <h3>1. Function <code>f(x) = x + 1</code></h3>
+                <p>This is a simple function where <code>f</code> stands for function. The <code>x</code> in this function is the input, and <code>x + 1</code> is the operation that gives us the output.</p>
             </div>
-
-            <div class="definition">
-                <h3>2. Vertex</h3>
-                <p><strong>Definition:</strong> The highest or lowest point on the graph of a quadratic function. This point is where the parabola turns and is the maximum point if the parabola opens downwards or the minimum point if it opens upwards.</p>
+            <div class="example">
+                <h3>2. Function <code>f(x) = 2x - 3</code></h3>
+                <p>This function represents a line where <code>2x - 3</code> is the operation to transform the input <code>x</code> into an output.</p>
             </div>
-
-            <div class="definition">
-                <h3>3. Axis of Symmetry</h3>
-                <p><strong>Definition:</strong> A vertical line that passes through the vertex of the parabola, dividing it into two mirror-image halves.</p>
-            </div>
-
-            <div class="definition">
-                <h3>4. Roots (or Zeros)</h3>
-                <p><strong>Definition:</strong> The points where the graph of the quadratic function intersects the x-axis. These are the values of <code>x</code> that make <code>f(x) = 0</code>.</p>
-            </div>
-
-            <div class="definition">
-                <h3>5. Parabola</h3>
-                <p><strong>Definition:</strong> The U-shaped curve that represents the graph of a quadratic function. It can open upwards or downwards.</p>
-            </div>
-
-            <div class="definition">
-                <h3>6. Standard Form</h3>
-                <p><strong>Definition:</strong> The general form of a quadratic function written as <code>f(x) = ax^2 + bx + c</code>.</p>
-            </div>
-
-            <div class="definition">
-                <h3>7. Factoring Form</h3>
-                <p><strong>Definition:</strong> A way to express a quadratic function as a product of its factors, written as <code>f(x) = a(x − p)(x − q)</code>, where <code>p</code> and <code>q</code> are the roots.</p>
-            </div>
-
-            <div class="definition">
-                <h3>8. Discriminant</h3>
-                <p><strong>Definition:</strong> Part of the quadratic formula inside the square root, given by <code>b^2 − 4ac</code>. It determines the nature of the roots of the quadratic equation:
-                <ul>
-                    <li><strong>Positive:</strong> Two real roots.</li>
-                    <li><strong>Zero:</strong> One real root (repeated root).</li>
-                    <li><strong>Negative:</strong> No real roots (two complex roots).</li>
-                </ul>
-                </p>
-            </div>
-
-            <div class="definition">
-                <h3>9. Roots (p and q)</h3>
-                <p><strong>Definition:</strong> The values of <code>x</code> where the quadratic function equals zero. In the factoring form <code>f(x) = a(x − p)(x − q)</code>, <code>p</code> and <code>q</code> are these root values.</p>
-            </div>
-
-            <div class="definition">
-                <h3>10. Maximum Point</h3>
-                <p><strong>Definition:</strong> The highest point on the graph of a quadratic function. It occurs when the parabola opens downwards (i.e., <code>a < 0</code>). At this point, the function has its greatest value.</p>
-            </div>
-
-            <div class="definition">
-                <h3>11. Minimum Point</h3>
-                <p><strong>Definition:</strong> The lowest point on the graph of a quadratic function. It occurs when the parabola opens upwards (i.e., <code>a > 0</code>). At this point, the function has its smallest value.</p>
+            <div class="example">
+                <h3>3. Function <code>f(x) = -x^2 + 4x + 1</code></h3>
+                <p>This quadratic function has a parabolic shape, with <code>-x^2 + 4x + 1</code> defining how the input <code>x</code> is transformed into the output.</p>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
-</body>
-</html>
+        <section class="definition">
+            <h2>Definitions</h2>
+            <dl>
+                <dt>Coefficient</dt>
+                <dd>A number that multiplies a variable. In the quadratic function <code>f(x) = ax^2 + bx + c</code>:
+                    <ul>
+                        <li><code>a</code> is the coefficient of <code>x^2</code>.</li>
+                        <li><code>b</code> is the coefficient of <code>x</code>.</li>
+                        <li><code>c</code> is the constant term.</li>
+                    </ul>
+                </dd>
+                <dt>Vertex</dt>
+                <dd>The highest or lowest point on the graph of a quadratic function. This point is where the parabola turns and is also the maximum point if the parabola opens downwards or the minimum point if it opens upwards.</dd>
+                <dt>Axis of Symmetry</dt>
+                <dd>A vertical line that passes through the vertex of the parabola, dividing it into two mirror-image halves.</dd>
+                <dt>Roots (or Zeros)</dt>
+                <dd>The points where the graph of the quadratic function intersects the x-axis. These are the values of <code>x</code> that make <code>f(x) = 0</code>.</dd>
+                <dt>Parabola</dt>
+                <dd>The U-shaped curve that represents the graph of a quadratic function. It can open upwards or downwards.</dd>
+                <dt>Standard Form</dt>
+                <dd>The general form of a quadratic function written as <code>f(x) = ax^2 + bx + c</code>.</dd>
+                <dt>Factoring Form</dt>
+                <dd>A way to express a quadratic function as a product of its factors, written as <code>f(x) = a(x - p)(x - q)</code>, where <code>p</code> and <code>q</code> are the roots.</dd>
+                <dt>Discriminant</dt>
+                <dd>Part of the quadratic formula inside the square root, given by <code>b^2 - 4ac</code>. It determines the nature of the roots of the quadratic equation:
+                    <ul>
+                        <li>Positive: Two real roots.</li>
+                        <li>Zero: One real root (repeated root).</li>
+                        <li>Negative: No real roots (two complex roots).</li>
+                    </ul>
+                </dd>
+                <dt>Roots (p and q)</dt>
+                <dd>The values of <code>x</code> where the quadratic function equals zero. In the factoring form <code>f(x) = a(x - p)(x - q)</code>, <code>p</code> and <code>q</code> are these root values.</dd>
+                <dt>Maximum Point</dt>
+                <dd>The highest point on the graph of a quadratic function. It occurs when the parabola opens downwards (<code>a < 0</code>). At this point, the function has its greatest value.</dd>
+                <dt>Minimum Point</dt>
+                <dd>The lowest point on the graph of a quadratic function. It occurs when the
